@@ -82,3 +82,37 @@ footer
     font-size: 12px;
     background: #f7c7ead9;
 }
+#start-screen,
+#end-screen  {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    background: #48223a80;
+}
+
+#start-screen[hidden],
+#end-screen[hidden] {
+    display: none;
+}
+
+.end-card {
+    width: min(90%, 360px);
+    padding: 28px;
+    text-align: center;
+    background: #fff5f9;
+    border: 3px solid #a54873;
+    border-radius: 18px;
+}
+
+#start-btn,
+#restart-btn { {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 12px;
+    background: #a54873;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
