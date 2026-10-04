@@ -101,18 +101,41 @@ footer
     width: min(90%, 360px);
     padding: 28px;
     text-align: center;
-    background: #fff5f9;
-    border: 3px solid #a54873;
+    background: #f2ccdb;
+    border: 3px solid hsl(328, 86%, 58%);
     border-radius: 18px;
 }
 
 #start-btn,
-#restart-btn { {
+#restart-btn  {
     padding: 10px 24px;
     border: none;
     border-radius: 12px;
-    background: #a54873;
+    background: hsl(328, 95%, 76%);
     color: white;
     font: inherit;
     cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.gamearea {
+    width: 100vw;
+    height: 100dvh;
+    min-height: 0;
+    aspect-ratio: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
